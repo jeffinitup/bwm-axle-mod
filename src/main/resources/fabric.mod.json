@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "bwm-axle-mod",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "BWM Axle Mod",
+  "description": "No",
   "authors": [
-    "Me!"
+    "jeffyjamzhd"
   ],
   "contact": {
     "homepage": "https://legacyfabric.net/",
@@ -13,23 +13,21 @@
   },
   "license": "CC0-1.0",
   "icon": "assets/modid/icon.png",
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
-    ],
-    "btw:addon": [
-      "btw.community.example.ExampleAddon"
+      "com.jeffyjamzhd.axlemod.AxleMod"
     ]
   },
   "custom": {
     "btw:addon_prefix": "EX"
   },
   "mixins": [
-    "modid.mixins.json"
+    "bwm-axle-mod.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.19",
-    "minecraft": "1.6.4"
+    "minecraft": "1.6.4",
+    "btw" : ">=3.0.0"
   }
 }
